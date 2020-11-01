@@ -99,9 +99,8 @@ hr {
   padding: 0.1% 3%;
   margin: 0;
   background-color: black;
-
 }
-.dropdown-style{
+.dropdown-style {
   background-color: black;
 }
 .dropdown-menu-center {
@@ -110,23 +109,23 @@ hr {
   text-align: left !important;
   transform: translate(-50%, 0) !important;
 }
-#dropdownMenuButton{
+#dropdownMenuButton {
   /* color: black; */
   background-color: black;
 }
-.notification-dropdown{
+.notification-dropdown {
   position: relative;
   right: 10%;
 }
-.notification-separator{
-  border:none;
+.notification-separator {
+  border: none;
   border-top: 1px solid white;
   padding: 0;
-  margin:  0 auto ;
+  margin: 0 auto;
   width: 10%;
 }
-.notification-item{
-  font-size: 0.9rem;;
+.notification-item {
+  font-size: 0.9rem;
 }
 
 /* title */
@@ -176,13 +175,13 @@ hr {
 .project-card {
   border: 2px solid;
   padding: 25% 0%;
-  border-radius: 5%;
+  border-radius: 10px;
   background-image: url("H.jpg");
 }
 .project-card-animated {
   border: 2px solid;
   padding: 5% 0%;
-  border-radius: 5%;
+  border-radius: 10px;
   background-image: url("H.jpg");
 }
 .project-animation {
@@ -268,7 +267,7 @@ hr {
 }
 
 .event-card:hover {
-  transform: scaleX(1.1) scaleY(1.3);
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 #events a {
@@ -362,4 +361,192 @@ hr {
 
 .footer-end {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Navigation Bar */
+  .navbar {
+    padding: 0; 
+  }
+  
+  .saelogo {
+    width: 110px;
+    height: 40px;
+    margin: 0;
+    padding: 0.5%;
+    margin-right: 0;
+  }
+
+  /* .navbar-brand{
+    position: relative;
+    right: 30px;
+  } */
+
+  .header-navigator .pad-mgn {
+    padding: 0.1% 1;
+    margin: 0;
+    background-color: black;
+  }
+  .dropdown-container{
+    position: relative;
+    left: 40px;
+  }
+  .notification-item{
+    width: 350px;
+  }
+  /* Title Section */
+  #title{
+    padding: 10% 0 2%;
+    margin: 5%;
+  }
+  #title h1{
+    font-size: 1.5rem;
+  }
+  .title-description .h1{
+    padding: 0;
+  }
+  .about h3{
+    text-align: center;
+    font-size: 1.4rem !important;
+  }
+  .about h4{
+    font-size: 1.3rem !important;
+  }
+  .about p{
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .gallery-description-head{
+    font-size: 1.1rem !important;
+    font-weight: 900;
+  }
+  #gallery {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .carousel-item {
+    padding: 2% 0;
+    font-size: 1.5rem;
+  }
+
+  /* footer */
+#footer {
+  padding: 2% 5%;
+}
+
+.footer-box-people {
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 0;
+  display: inline-block;
+}
+.footer-box-people h4{
+  text-align: left;
+  font-size: 0.7rem;
+  
+}
+.footer-box-people-description {
+  text-align: left;
+  margin-right: 5%;
+  display: inline block;
+  font-size: 0.8rem;
+  
+}
+.footer-box-people-image {
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5%;
+}
+.image-descriptive-box{
+  text-align: left;
+  margin-right: 5%;
+  padding-right: 5%;
+  display: inline block;
+  font-size: 0.8rem;
+  margin-top: 4%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.image-descriptive-box h4{
+  text-align: left;
+}
+.footer-box {
+  font-size: 0.9rem;
+  padding-top: 10%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1%;
+}
+
+/* events */
+
+#events {
+  padding: 12% 0 0 0;
+  margin: 5%;
+  margin-bottom: 15%;
+}
+
+#events h2{
+  margin-bottom: 8%;
+}
+
+.row-custom{
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.card-custom {
+  float: left;
+  padding: 1%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 450px;
+  width:280px;
+}
+.event-card-mobile{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+.event-card-elements{
+  color: white;
+  padding: 30% 15%;
+}
+.event-card-elements-secondary{
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3% 7%;
+}
+.event-card-elements h3{
+  margin-bottom: 10%;
+}
+#projects {
+  padding: 12% 0 0 0;
+  margin: 5%;
+  margin-bottom: 15%;
+}
+#projects h2{
+  margin-bottom: 8%;
+}
+
+
+  
 }
