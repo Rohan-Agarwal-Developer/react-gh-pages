@@ -1,7 +1,8 @@
 body {
   font-family: "Montserrat";
   color: Black;
-  background-image: url("C.jpg");
+  background-image: url("background.jpg");
+    background-size: cover;
   background-attachment: fixed;
 }
 
@@ -67,11 +68,15 @@ hr {
 .navbar-brand {
   font-family: "ubuntu";
   font-weight: bold;
+  display: flex;
+  padding-top: 1.6%;
 }
-
 .header-navigator {
   padding: 0;
 }
+
+
+
 
 .saelogo {
   width: 128.7px;
@@ -81,6 +86,17 @@ hr {
   margin-right: 2%;
   /* border-style: solid;
   border-width: 0.1px; */
+  display: flex; 
+  float: left;
+}
+.search-box{
+  padding-top: 1%;
+}
+.search-box input{
+  width: 180px; 
+  height: 30px;
+  padding: 0;
+  padding-left: 5%;
 }
 
 .header-navigator h6 {
@@ -126,6 +142,20 @@ hr {
 }
 .notification-item {
   font-size: 0.9rem;
+}
+.article-search{
+  padding-top: 2.5%;
+  margin-right: 20px;
+  display: inline;
+  float: left;
+}
+.article-search input{
+  width: 200px; height: 30px; padding: 0 3%; border-radius: 0;
+}
+.article-search button{
+  height: 30px; 
+  border: 0;
+  border-radius: 0;
 }
 
 /* title */
@@ -173,16 +203,19 @@ hr {
 }
 
 .project-card {
-  border: 2px solid;
+  border: 2px solid black;
   padding: 25% 0%;
   border-radius: 10px;
-  background-image: url("H.jpg");
+  background-color: black;
+  color: white;
 }
 .project-card-animated {
   border: 2px solid;
   padding: 5% 0%;
   border-radius: 10px;
-  background-image: url("H.jpg");
+  background-color: black;
+  color: white;
+  border: 2px solid black;
 }
 .project-animation {
   animation-name: example;
@@ -251,9 +284,11 @@ hr {
 }
 .event-card {
   border: 2px solid;
-  padding: 2% 2%;
+  padding: 20% 5%;
   border-radius: 3%;
-  background-image: url("H.jpg");
+  background-color: black;
+  color: white;
+  border: 2px solid black;
 }
 
 .event-images {
@@ -369,6 +404,16 @@ hr {
   .navbar {
     padding: 0; 
   }
+  .navbar-brand {
+    font-family: "ubuntu";
+    font-weight: bold;
+    display: flex;
+    padding-top: 3.5%;
+    padding-left: 3%;
+  }
+  .navbar-brand-search{
+    padding: initial;
+  }
   
   .saelogo {
     width: 110px;
@@ -377,11 +422,6 @@ hr {
     padding: 0.5%;
     margin-right: 0;
   }
-
-  /* .navbar-brand{
-    position: relative;
-    right: 30px;
-  } */
 
   .header-navigator .pad-mgn {
     padding: 0.1% 1;
